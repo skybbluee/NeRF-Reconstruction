@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,39 +7,67 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        .author {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #666;
         }
         .module {
             margin-bottom: 40px;
         }
         .module h2 {
             font-size: 24px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .video-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
         .video-container video {
-            max-width: 100%;
+            width: 100%;
+            max-width: 300px;
             height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .single-video {
+            max-width: 600px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>欢迎来到视频展示页面</h1>
+        <div class="author">by Skyblue</div>
 
         <!-- 模块1：LEGO建模展示 -->
         <div class="module">
             <h2>LEGO 建模展示</h2>
             <div class="video-container">
-                <video width="600" controls>
+                <video class="single-video" controls>
                     <source src="lego.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
@@ -51,35 +78,35 @@
         <div class="module">
             <h2>八个 LLFF 场景建模展示</h2>
             <div class="video-container">
-                <video width="300" controls>
+                <video controls>
                     <source src="fern_test_spiral_200000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="flower_test_spiral_050000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
-                    <source src="fortress_test_spiral_050000_rgb" type="video/mp4">
+                <video controls>
+                    <source src="fortress_test_spiral_050000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="horns_test_spiral_050000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="leaves_test_spiral_050000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="orchids_test_spiral_200000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="room_test_spiral_200000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="300" controls>
+                <video controls>
                     <source src="trex_test_spiral_200000_rgb.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
@@ -90,11 +117,11 @@
         <div class="module">
             <h2>胸部 CT 和膝关节 CT 展示</h2>
             <div class="video-container">
-                <video width="600" controls>
+                <video class="single-video" controls>
                     <source src="chest.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
-                <video width="600" controls>
+                <video class="single-video" controls>
                     <source src="knee.mp4" type="video/mp4">
                     您的浏览器不支持HTML5视频标签。
                 </video>
